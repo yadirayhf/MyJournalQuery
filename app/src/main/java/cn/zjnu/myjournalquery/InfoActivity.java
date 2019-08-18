@@ -77,22 +77,22 @@ public class InfoActivity extends AppCompatActivity {
 
             for(int i = 1;i <= sum; i++){
             	Journal journal = new Journal();
-				journal.setId(js.getString(String.format("%d-id",i)).toString());
-				journal.setName(js.getString(String.format("%d-name",i)).toString());
-				journal.setIssn(js.getString(String.format("%d-issn",i)).toString());
-				journal.setPress(js.getString(String.format("%d-press",i)).toString());
-				journal.setCitescore(js.getString(String.format("%d-citescore",i)).toString());
-				journal.setHindex(js.getString(String.format("%d-hindex",i)).toString());
-				journal.setFenqu(js.getString(String.format("%d-fenqu",i)).toString());
-				journal.setBsj(js.getString(String.format("%d-bsj",i)).toString());
-				journal.setSsj(js.getString(String.format("%d-ssj",i)).toString());
-				journal.setWatch(js.getString(String.format("%d-watch",i)).toString());
-				journal.setIf2016(js.getString(String.format("%d-if2016",i)).toString());
-				journal.setIf2017(js.getString(String.format("%d-if2017",i)).toString());
-				journal.setIf2018(js.getString(String.format("%d-if2018",i)).toString());
-				journal.setIfavg(js.getString(String.format("%d-ifavg",i)).toString());
-				journal.setCcf(js.getString(String.format("%d-ccf",i)).toString());
-				journal.setRank(js.getString(String.format("%d-rank",i)).toString());
+//				journal.setId(js.getString(String.format("%d-id",i)).toString());
+//				journal.setName(js.getString(String.format("%d-name",i)).toString());
+//				journal.setIssn(js.getString(String.format("%d-issn",i)).toString());
+//				journal.setPress(js.getString(String.format("%d-press",i)).toString());
+//				journal.setCitescore(js.getString(String.format("%d-citescore",i)).toString());
+//				journal.setHindex(js.getString(String.format("%d-hindex",i)).toString());
+//				journal.setFenqu(js.getString(String.format("%d-fenqu",i)).toString());
+//				journal.setBsj(js.getString(String.format("%d-bsj",i)).toString());
+//				journal.setSsj(js.getString(String.format("%d-ssj",i)).toString());
+//				journal.setWatch(js.getString(String.format("%d-watch",i)).toString());
+//				journal.setIf2016(js.getString(String.format("%d-if2016",i)).toString());
+//				journal.setIf2017(js.getString(String.format("%d-if2017",i)).toString());
+//				journal.setIf2018(js.getString(String.format("%d-if2018",i)).toString());
+//				journal.setIfavg(js.getString(String.format("%d-ifavg",i)).toString());
+//				journal.setCcf(js.getString(String.format("%d-ccf",i)).toString());
+//				journal.setRank(js.getString(String.format("%d-rank",i)).toString());
 				System.out.println(journal.getName());
                 journals.add(journal);
             }
