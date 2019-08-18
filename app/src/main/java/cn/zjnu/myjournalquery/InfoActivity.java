@@ -32,7 +32,7 @@ public class InfoActivity extends AppCompatActivity {
 	private int number = 0;
 	private int infoKind = 5;
 	private int currentRecord = 0;
-	private int sum = -1;
+	private int sum = 0;
 	
 	private String ans = null;
 	private String[] strs;
@@ -54,41 +54,49 @@ public class InfoActivity extends AppCompatActivity {
 		
 		Intent intent = getIntent();
 		ans = intent.getStringExtra("cn.zjnu.myjuornamquery.ans");
-		MyUtils.LOGD("ans:", ans);
-		
-		Show();
-		btn_down.setOnClickListener(new DownOnClickListener());
-        btn_up.setOnClickListener(new UpOnClickListener());
+		parseEasyJson(ans);
+		System.out.print(sum);
+//		Show();
+//		btn_down.setOnClickListener(new DownOnClickListener());
+//        btn_up.setOnClickListener(new UpOnClickListener());
 	}
 	
 	@SuppressLint("DefaultLocale")
 	private void parseEasyJson(String json){
-		journals = new ArrayList<Journal>();
+		journals = new ArrayList<>();
 
         try{
-        	JSONObject js = new JSONObject(json);
-			int num = (int)js.get("num");
+//        	JSONObject js = JSONObject.
+//					/*
+//
+//
+//
+//
+//					 */
+////			sum = (int)js.get("num");
 
-            for(int i = 1;i <= num; i++){
+            for(int i = 1;i <= sum; i++){
             	Journal journal = new Journal();
-				journal.setId(js.get(String.format("%d-id",i)).toString());
-				journal.setName(js.get(String.format("%d-name",i)).toString());
-				journal.setIssn(js.get(String.format("%d-issn",i)).toString());
-				journal.setPress(js.get(String.format("%d-press",i)).toString());
-				journal.setCitescore(js.get(String.format("%d-citescore",i)).toString());
-				journal.setHindex(js.get(String.format("%d-hindex",i)).toString());
-				journal.setFenqu(js.get(String.format("%d-fenqu",i)).toString());
-				journal.setBsj(js.get(String.format("%d-bsj",i)).toString());
-				journal.setSsj(js.get(String.format("%d-ssj",i)).toString());
-				journal.setWatch(js.get(String.format("%d-watch",i)).toString());
-				journal.setIf2016(js.get(String.format("%d-if2016",i)).toString());
-				journal.setIf2017(js.get(String.format("%d-if2017",i)).toString());
-				journal.setIf2018(js.get(String.format("%d-if2018",i)).toString());
-				journal.setIfavg(js.get(String.format("%d-ifavg",i)).toString());
-				journal.setCcf(js.get(String.format("%d-ccf",i)).toString());
-				journal.setRank(js.get(String.format("%d-rank",i)).toString());
+				journal.setId(js.getString(String.format("%d-id",i)).toString());
+				journal.setName(js.getString(String.format("%d-name",i)).toString());
+				journal.setIssn(js.getString(String.format("%d-issn",i)).toString());
+				journal.setPress(js.getString(String.format("%d-press",i)).toString());
+				journal.setCitescore(js.getString(String.format("%d-citescore",i)).toString());
+				journal.setHindex(js.getString(String.format("%d-hindex",i)).toString());
+				journal.setFenqu(js.getString(String.format("%d-fenqu",i)).toString());
+				journal.setBsj(js.getString(String.format("%d-bsj",i)).toString());
+				journal.setSsj(js.getString(String.format("%d-ssj",i)).toString());
+				journal.setWatch(js.getString(String.format("%d-watch",i)).toString());
+				journal.setIf2016(js.getString(String.format("%d-if2016",i)).toString());
+				journal.setIf2017(js.getString(String.format("%d-if2017",i)).toString());
+				journal.setIf2018(js.getString(String.format("%d-if2018",i)).toString());
+				journal.setIfavg(js.getString(String.format("%d-ifavg",i)).toString());
+				journal.setCcf(js.getString(String.format("%d-ccf",i)).toString());
+				journal.setRank(js.getString(String.format("%d-rank",i)).toString());
+				System.out.println(journal.getName());
                 journals.add(journal);
             }
+            currentRecord = 1;
         }catch (Exception e){e.printStackTrace();}
     }
 	
@@ -101,8 +109,6 @@ public class InfoActivity extends AppCompatActivity {
 				Toast.makeText(InfoActivity.this, "当前已是最后一条记录", Toast.LENGTH_SHORT).show();
 			}else{
 				currentRecord++;
-
-				parseEasyJson(ans);
 				Show();
 			}
 			
@@ -113,7 +119,7 @@ public class InfoActivity extends AppCompatActivity {
 
 		@Override
 		public void onClick(View v) {
-			if(currentRecord==0)
+			if(currentRecord==1)
 			{
 				Toast.makeText(InfoActivity.this, "当前已是第一条记录", Toast.LENGTH_SHORT).show();
 			}else{
@@ -148,7 +154,7 @@ public class InfoActivity extends AppCompatActivity {
         	tv_fullName.setText("全称:"+strsInfo[3].substring(1, strsInfo[3].length()-1));
         	tv_publishHouse.setText("出版社:"+strsInfo[4].substring(1, strsInfo[4].length()-1));*/
 		//sum表示查询出的总记录数,num表示当前是第几条记录
-		if(sum==-1)
+		if(sum==0)
 		{
 			tv_number.setText("共0条记录");
         	tv_id.setText(null);
@@ -157,11 +163,11 @@ public class InfoActivity extends AppCompatActivity {
         	tv_fullName.setText(null);
         	tv_publishHouse.setText(null);
 		}else{
-        	tv_number.setText(String.format("共%s条 当前第%s条", sum+1,currentRecord+1));
-        	tv_id.setText("id:"+journals.get(currentRecord).getId());
-        	tv_rank.setText("排名:"+journals.get(currentRecord).getRank());
-        	tv_fullName.setText("全称:"+journals.get(currentRecord).getName());
-        	tv_publishHouse.setText("出版社:"+journals.get(currentRecord).getPress());	
+        	tv_number.setText(String.format("共%s条 当前第%s条", sum,currentRecord));
+        	tv_id.setText("id:"+journals.get(currentRecord-1).getId());
+        	tv_rank.setText("排名:"+journals.get(currentRecord-1).getRank());
+        	tv_fullName.setText("全称:"+journals.get(currentRecord-1).getName());
+        	tv_publishHouse.setText("出版社:"+journals.get(currentRecord-1).getPress());
 		}
 	}
 

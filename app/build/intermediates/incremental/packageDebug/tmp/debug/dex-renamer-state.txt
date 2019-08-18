@@ -1,4 +1,4 @@
-#Sun Aug 18 19:26:30 CST 2019
+#Sun Aug 18 20:38:13 CST 2019
 base.0=/home/bnc/AndroidStudioProjects/MyJournalQuery/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
