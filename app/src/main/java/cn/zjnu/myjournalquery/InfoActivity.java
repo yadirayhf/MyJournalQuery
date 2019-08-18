@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -60,21 +61,32 @@ public class InfoActivity extends AppCompatActivity {
         btn_up.setOnClickListener(new UpOnClickListener());
 	}
 	
+	@SuppressLint("DefaultLocale")
 	private void parseEasyJson(String json){
 		journals = new ArrayList<Journal>();
 
         try{
-            JSONArray jsonArray = new JSONArray(json);
-            for(int i = 0;i < jsonArray.length();i++){
-                JSONObject jsonObject = (JSONObject) jsonArray.get(i);
-                Journal journal = new Journal();
-                journal.setId(jsonObject.getString("id"));
-                journal.setRank(jsonObject.getString("rank"));
-                journal.setAbbreviation(jsonObject.getString("abbreviation"));
-                journal.setFullname(jsonObject.getString("fullname"));
-                journal.setPress(jsonObject.getString("press"));
+        	JSONObject js = new JSONObject(json);
+			int num = (int)js.get("num");
 
-                sum++;
+            for(int i = 1;i <= num; i++){
+            	Journal journal = new Journal();
+				journal.setId(js.get(String.format("%d-id",i)).toString());
+				journal.setName(js.get(String.format("%d-name",i)).toString());
+				journal.setIssn(js.get(String.format("%d-issn",i)).toString());
+				journal.setPress(js.get(String.format("%d-press",i)).toString());
+				journal.setCitescore(js.get(String.format("%d-citescore",i)).toString());
+				journal.setHindex(js.get(String.format("%d-hindex",i)).toString());
+				journal.setFenqu(js.get(String.format("%d-fenqu",i)).toString());
+				journal.setBsj(js.get(String.format("%d-bsj",i)).toString());
+				journal.setSsj(js.get(String.format("%d-ssj",i)).toString());
+				journal.setWatch(js.get(String.format("%d-watch",i)).toString());
+				journal.setIf2016(js.get(String.format("%d-if2016",i)).toString());
+				journal.setIf2017(js.get(String.format("%d-if2017",i)).toString());
+				journal.setIf2018(js.get(String.format("%d-if2018",i)).toString());
+				journal.setIfavg(js.get(String.format("%d-ifavg",i)).toString());
+				journal.setCcf(js.get(String.format("%d-ccf",i)).toString());
+				journal.setRank(js.get(String.format("%d-rank",i)).toString());
                 journals.add(journal);
             }
         }catch (Exception e){e.printStackTrace();}
@@ -148,8 +160,7 @@ public class InfoActivity extends AppCompatActivity {
         	tv_number.setText(String.format("共%s条 当前第%s条", sum+1,currentRecord+1));
         	tv_id.setText("id:"+journals.get(currentRecord).getId());
         	tv_rank.setText("排名:"+journals.get(currentRecord).getRank());
-        	tv_shortName.setText("简称:"+journals.get(currentRecord).getAbbreviation());
-        	tv_fullName.setText("全称:"+journals.get(currentRecord).getFullname());
+        	tv_fullName.setText("全称:"+journals.get(currentRecord).getName());
         	tv_publishHouse.setText("出版社:"+journals.get(currentRecord).getPress());	
 		}
 	}
