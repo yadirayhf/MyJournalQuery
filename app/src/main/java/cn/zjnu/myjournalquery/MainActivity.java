@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
 
 			            MyUtils.LOGD("compeletedURL", compeletedURL);
 			            MyUtils.LOGD("res",HttpUtil.isInternetAvailable());
-			            //发送请求
+			            //发送请求..
 			            HttpUtil.sendHttpRequest(compeletedURL, new HttpCallbackListener() {
 			                @Override
 			                public void onFinish(String response) {
