@@ -2,6 +2,13 @@ package cn.zjnu.myjournalquery;
 
 import android.util.Log;
 
+/*
+
+¿ØÖÆÌ¨Êä³ö
+
+ */
+
+
 public  class MyUtils {
 	private static boolean isOpen=true;
 	public static void LOGD(String tag,String msg){

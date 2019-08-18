@@ -26,14 +26,6 @@ public class HttpUtil {
                     //设置方法和参数
                     //请求方法
                     connection.setRequestMethod("GET");
-                    //连接超时时间
-                    connection.setConnectTimeout(8000);
-                    //读取超时异常
-                    connection.setReadTimeout(8000);
-                    
-                    //详情见https://blog.csdn.net/u010665691/article/details/45558119
-                    connection.setDoInput(true);
-                    connection.setDoOutput(true);
                     
                     //获取返回结果
                     InputStream inputStream = connection.getInputStream();
@@ -43,13 +35,11 @@ public class HttpUtil {
                     while ((line = reader.readLine()) != null){
                         response.append(line);
                     }
+
                     //成功则回调onFinish
                     if (listener != null){
                         listener.onFinish(response.toString());
                     }
-                	//模拟带回3个数据的js记录
-                	//String ans="[{\"id\":\"1\",\"rank\":\"1\",\"abbreviation\":\"TOCS\",\"fullname\":\"ACM Transactions on Computer Systems\",\"press\":\"ACM\"},{\"id\":\"2\",\"rank\":\"2\",\"abbreviation\":\"TOC\",\"fullname\":\"IEEE Transactions on Computers\",\"press\":\"TEEE\"}]";
-                	//listener.onFinish(ans);
                 	
                 } catch (Exception e) {
                     e.printStackTrace();

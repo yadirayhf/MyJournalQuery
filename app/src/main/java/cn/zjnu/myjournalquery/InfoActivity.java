@@ -53,16 +53,7 @@ public class InfoActivity extends AppCompatActivity {
 		
 		Intent intent = getIntent();
 		ans = intent.getStringExtra("cn.zjnu.myjuornamquery.ans");
-		//ans="[{\"id\":\"1\",\"rank\":\"1\",\"abbreviation\":\"TOCS\",\"fullname\":\"ACM Transactions on Computer Systems\",\"press\":\"ACM\"},{\"id\":\"2\",\"rank\":\"2\",\"abbreviation\":\"TOC\",\"fullname\":\"IEEE Transactions on Computers\",\"press\":\"TEEE\"}]";
-		/*
-	    strs = ans.split("#");
-        String subStr = null;
-        sum = Integer.parseInt(strs[0]);//得到记录总条数
-        currentRecord = 1;
-        Show();
-        btn_down.setOnClickListener(new DownOnClickListener());
-        btn_up.setOnClickListener(new UpOnClickListener());*/
-		parseEasyJson(ans);
+		MyUtils.LOGD("ans:", ans);
 		
 		Show();
 		btn_down.setOnClickListener(new DownOnClickListener());
@@ -71,7 +62,7 @@ public class InfoActivity extends AppCompatActivity {
 	
 	private void parseEasyJson(String json){
 		journals = new ArrayList<Journal>();
-		
+
         try{
             JSONArray jsonArray = new JSONArray(json);
             for(int i = 0;i < jsonArray.length();i++){
@@ -82,7 +73,7 @@ public class InfoActivity extends AppCompatActivity {
                 journal.setAbbreviation(jsonObject.getString("abbreviation"));
                 journal.setFullname(jsonObject.getString("fullname"));
                 journal.setPress(jsonObject.getString("press"));
-               
+
                 sum++;
                 journals.add(journal);
             }
@@ -98,6 +89,8 @@ public class InfoActivity extends AppCompatActivity {
 				Toast.makeText(InfoActivity.this, "当前已是最后一条记录", Toast.LENGTH_SHORT).show();
 			}else{
 				currentRecord++;
+
+				parseEasyJson(ans);
 				Show();
 			}
 			

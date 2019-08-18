@@ -15,6 +15,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -86,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
     	//load();
 	}
 
+	@SuppressLint("HandlerLeak")
 	private void initview() {
 		cb_Name =  findViewById(R.id.cb_Name);
 		cb_ISSN = findViewById(R.id.cb_ISSN);
@@ -121,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
 				ans = msg.obj.toString();
 				Intent intent = new Intent(MainActivity.this,InfoActivity.class);
 				intent.putExtra("cn.zjnu.myjuornamquery.ans",ans);
-				MyUtils.LOGD("Ans", ans);
+//				MyUtils.LOGD("Ans", ans);
 				startActivity(intent);
 			}
 
@@ -172,21 +174,20 @@ public class MainActivity extends AppCompatActivity {
 			        try {
 			            //构造完整URL
 			            String compeletedURL = HttpUtil.getURLWithParams(originAddress, params);
-
-			            MyUtils.LOGD("compeletedURL", compeletedURL);
-			            MyUtils.LOGD("res",HttpUtil.isInternetAvailable());
+//			            MyUtils.LOGD("compeletedURL", compeletedURL);
+//			            MyUtils.LOGD("res",HttpUtil.isInternetAvailable());
 			            //发送请求..
 			            HttpUtil.sendHttpRequest(compeletedURL, new HttpCallbackListener() {
 			                @Override
 			                public void onFinish(String response) {
-			                	
+								System.out.println(response);
 			                    Message message = Message.obtain();
 			                    message.obj = response;
 			                    mMainHandler.sendMessage(message);
-			                    
+
 			                }
 
-			               
+
 			            });
 			        } catch (Exception e) {
 			            e.printStackTrace();

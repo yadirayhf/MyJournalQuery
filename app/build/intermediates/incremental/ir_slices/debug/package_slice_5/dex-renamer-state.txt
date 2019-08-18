@@ -1,4 +1,4 @@
-#Sun Aug 18 16:03:33 CST 2019
-base.0=G\:\\MyJournalQuery2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+#Sun Aug 18 17:52:48 CST 2019
+base.0=/home/bnc/AndroidStudioProjects/MyJournalQuery/app/build/intermediates/transforms/dexMerger/debug/5
 path.0=classes.dex
 renamed.0=classes.dex
