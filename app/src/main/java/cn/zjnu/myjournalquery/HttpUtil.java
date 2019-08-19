@@ -58,24 +58,6 @@ public class HttpUtil {
     public static String getURLWithParams(String address,HashMap<String,String> params) throws UnsupportedEncodingException {
        //设置编码
         final String encode = "UTF-8";
-        StringBuilder sb = new StringBuilder();
-        int Type = 0;
-        //计算Type的值
-        for(Map.Entry<String, String> entry:params.entrySet())
-        {
-            if(entry.getValue().isEmpty()){
-                sb.append("0");
-            }else {
-                sb.append("1");
-            }
-        }
-        sb.reverse();
-        for (int i = 0; i < sb.length(); i++) {
-            if(sb.codePointAt(i) == '1'){
-                Type += Math.pow(2,i);
-            }
-        }
-        params.put(User.TYPE, String.valueOf(Type));
 
         StringBuilder url = new StringBuilder(address);
         url.append("?");
@@ -89,22 +71,6 @@ public class HttpUtil {
         //删掉最后一个&
         url.deleteCharAt(url.length() - 1);
         return url.toString();
-        //结果大致为http://192.168.3.1:8080/loginServlet"?phone=123456&password=abc123456
-    }
-
-    public static String isInternetAvailable() {
-        try {
-            InetAddress ipAddr = InetAddress.getByName("baidu.com"); //You can replace it with your name
-
-            if (ipAddr.equals("")) {
-                return "false";
-            } else {
-                return "true";
-            }
-
-        } catch (Exception e) {
-            return "false";
-        }
 
     }
 }

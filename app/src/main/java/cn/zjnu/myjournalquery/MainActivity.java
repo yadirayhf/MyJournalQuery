@@ -37,24 +37,29 @@ public class MainActivity extends AppCompatActivity {
 
 	private CheckBox cb_Name;
 	private CheckBox cb_ISSN;
-	private CheckBox cb_Abbreviation;
 	private CheckBox cb_Press;
-	private CheckBox cb_CCF;
+	private CheckBox cb_CiteScore;
+	private CheckBox cb_Hindex;
 	private CheckBox cb_SCI;
+	private CheckBox cb_Watch;
 	private CheckBox cb_IF;
+	private CheckBox cb_CCF;
 
 	private EditText edt_Name;
 	private EditText edt_ISSN;
-	private EditText edt_Abbreviation;
 	private EditText edt_Press;
-	private EditText edt_CCFPartition;
-	private EditText edt_CCFCategory;
-	private EditText edt_SCIPartition;
-	private EditText edt_SCIBigSubjects;
-	private EditText edt_SCISmSubjects;
-	private EditText edt_IFYear;
-	private EditText edt_IFMin;
-	private EditText edt_IFMax;
+	private EditText edt_Csl;
+	private EditText edt_Csh;
+	private EditText edt_Hdl;
+	private EditText edt_Hdh;
+	private EditText edt_Fenqu;
+	private EditText edt_Bsj;
+	private EditText edt_Ssj;
+	private EditText edt_Watchl;
+	private EditText edt_Watchh;
+	private EditText edt_Ifl;
+	private EditText edt_Ifh;
+	private EditText edt_CCF;
 
 	private Button btn_select;
 
@@ -89,31 +94,34 @@ public class MainActivity extends AppCompatActivity {
 
 	@SuppressLint("HandlerLeak")
 	private void initview() {
-		cb_Name =  findViewById(R.id.cb_Name);
+		cb_Name = findViewById(R.id.cb_Name);
 		cb_ISSN = findViewById(R.id.cb_ISSN);
-		cb_Abbreviation = findViewById(R.id.cb_Abbreviation);
 		cb_Press = findViewById(R.id.cb_Press);
-		cb_CCF = findViewById(R.id.cb_CCF);
+		cb_CiteScore = findViewById(R.id.cb_CiteScore);
+		cb_Hindex = findViewById(R.id.cb_Hindex);
 		cb_SCI = findViewById(R.id.cb_SCI);
+		cb_Watch = findViewById(R.id.cb_Watch);
 		cb_IF = findViewById(R.id.cb_IF);
+		cb_CCF = findViewById(R.id.cb_CCF);
 
 		edt_Name = findViewById(R.id.edt_Name);
 		edt_ISSN = findViewById(R.id.edt_ISSN);
-		edt_Abbreviation = findViewById(R.id.edt_Abbreviation);
 		edt_Press = findViewById(R.id.edt_Press);
-		edt_CCFPartition = findViewById(R.id.edt_CCFPartition);
-		edt_CCFCategory = findViewById(R.id.edt_CCFCategory);
-		edt_SCIPartition = findViewById(R.id.edt_SCIPartition);
-		edt_SCIBigSubjects = findViewById(R.id.edt_SCIBigSubjects);
-		edt_SCISmSubjects = findViewById(R.id.edt_SCISmSubjects);
-		edt_IFYear = findViewById(R.id.edt_IFYear);
-		edt_IFMax = findViewById(R.id.edt_IFMax);
-		edt_IFMin = findViewById(R.id.edt_IFMin);
+		edt_Csl = findViewById(R.id.edt_Csl);
+		edt_Csh = findViewById(R.id.edt_Csh);
+		edt_Hdl = findViewById(R.id.edt_Hdl);
+		edt_Hdh = findViewById(R.id.edt_Hdh);
+		edt_Fenqu = findViewById(R.id.edt_Fenqu);
+		edt_Bsj = findViewById(R.id.edt_Bsj);
+		edt_Ssj = findViewById(R.id.edt_Ssj);
+		edt_Watchl =findViewById(R.id.edt_Watchl);
+		edt_Watchh = findViewById(R.id.edt_Watchh);
+		edt_Ifl = findViewById(R.id.edt_Ifl);
+		edt_Ifh = findViewById(R.id.edt_Ifh);
+		edt_CCF = findViewById(R.id.edt_CCF);
 
 		btn_select = findViewById(R.id.btn_select);
-
 		btn_select.setOnClickListener(new MyonClickListener());
-
 
 		mThreadPool = Executors.newCachedThreadPool();
 		mMainHandler = new Handler(){
@@ -123,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
 				ans = msg.obj.toString();
 				Intent intent = new Intent(MainActivity.this,InfoActivity.class);
 				intent.putExtra("cn.zjnu.myjuornamquery.ans",ans);
-//				MyUtils.LOGD("Ans", ans);
+				MyUtils.LOGD("Ans", ans);
 				startActivity(intent);
 			}
 
@@ -142,45 +150,64 @@ public class MainActivity extends AppCompatActivity {
 					
 			        HashMap<String, String> params = new HashMap<String, String>();
 
+			        int Type = 0;
 			        //判断哪些信息输入了
 			        if(cb_Name.isChecked()){
 			        	params.put(User.NAME, edt_Name.getText().toString().trim());
+			        	Type+=2;
 					}
 			        if(cb_ISSN.isChecked()){
 			        	params.put(User.ISSN,edt_ISSN.getText().toString().trim());
-					}
-			        if(cb_Abbreviation.isChecked()){
-			        	params.put(User.ABBREVIATION,edt_Abbreviation.getText().toString().trim());
+						Type+=1;
 					}
 			        if(cb_Press.isChecked()){
 			        	params.put(User.PRESS,edt_Press.getText().toString().trim());
+						Type+=4;
 					}
-			        if(cb_CCF.isChecked()){
-			        	params.put(User.CCFPARTITION,edt_CCFPartition.getText().toString().trim());
-			        	params.put(User.CCFCATEGORY,edt_CCFCategory.getText().toString().trim());
+			        if(cb_CiteScore.isChecked()){
+			        	params.put(User.CSL,edt_Csl.getText().toString().trim());
+						params.put(User.CSH,edt_Csh.getText().toString().trim());
+						Type+=24;
+					}
+			        if(cb_Hindex.isChecked()){
+			        	params.put(User.HDL,edt_Hdl.getText().toString().trim());
+			        	params.put(User.HDH,edt_Hdh.getText().toString().trim());
+						Type+=96;
 					}
 			        if(cb_SCI.isChecked())
 					{
-						params.put(User.SCIPARTITION,edt_SCIPartition.getText().toString().trim());
-						params.put(User.SCIBIGSUBJECTS,edt_SCIBigSubjects.getText().toString().trim());
-						params.put(User.SCISMSUJECTS,edt_SCISmSubjects.getText().toString().trim());
+						params.put(User.FENQU,edt_Fenqu.getText().toString().trim());
+						params.put(User.BSJ,edt_Bsj.getText().toString().trim());
+						params.put(User.SSJ,edt_Ssj.getText().toString().trim());
+						Type+=896;
+					}
+					if(cb_Watch.isChecked())
+					{
+						params.put(User.WATCHL,edt_Watchl.getText().toString().trim());
+						params.put(User.WATCHH,edt_Watchh.getText().toString().trim());
+						Type+=3072;
 					}
 			        if(cb_IF.isChecked())
 					{
-						params.put(User.IFYEAR,edt_IFYear.getText().toString().trim());
-						params.put(User.IFMIN,edt_IFMin.getText().toString().trim());
-						params.put(User.IFMAX,edt_IFMax.getText().toString().trim());
+						params.put(User.IFL,edt_Ifl.getText().toString().trim());
+						params.put(User.IFH,edt_Ifh.getText().toString().trim());
+						Type+=12288;
 					}
+			        if(cb_CCF.isChecked())
+					{
+						params.put(User.CCF,edt_CCF.getText().toString().trim());
+						Type+=16384;
+					}
+			        params.put(User.TYPE,String.valueOf(Type));
 			        try {
 			            //构造完整URL
 			            String compeletedURL = HttpUtil.getURLWithParams(originAddress, params);
-//			            MyUtils.LOGD("compeletedURL", compeletedURL);
-//			            MyUtils.LOGD("res",HttpUtil.isInternetAvailable());
+			            MyUtils.LOGD("compeletedURL", compeletedURL);
 			            //发送请求..
 			            HttpUtil.sendHttpRequest(compeletedURL, new HttpCallbackListener() {
 			                @Override
 			                public void onFinish(String response) {
-								System.out.println(response);
+								MyUtils.LOGD("res",response);
 			                    Message message = Message.obtain();
 			                    message.obj = response;
 			                    mMainHandler.sendMessage(message);

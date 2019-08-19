@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/bnc/AndroidStudioProjects/MyJournalQuery/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "G:\\Journal123\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "/home/bnc/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0b6c6ce3b0aac604cd0ca81cd9fd546d/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\杨海丰\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\0e730daf69f33291112176dc6459c0e5\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/bnc/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/bdbf1d15059727f5e6c8d835c687e5f6/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\杨海丰\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\8d506229b9514483bbd9d1dc69bc5bc0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

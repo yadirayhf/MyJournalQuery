@@ -30,13 +30,12 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_below="@+id/edt_Name"
-		android:layout_marginLeft="4dp"
 		android:layout_toRightOf="@+id/cb_ISSN"
 		android:hint="在这里输入ISSN"
 		android:text="0734-2071" />
 
 	<android.support.v7.widget.AppCompatCheckBox
-		android:id="@+id/cb_Abbreviation"
+		android:id="@+id/cb_Press"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_below="@+id/cb_Name"
@@ -45,134 +44,235 @@
 		android:layout_toRightOf="@+id/edt_ISSN" />
 
 	<EditText
-		android:id="@+id/edt_Abbreviation"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_below="@+id/edt_Name"
-		android:layout_toRightOf="@+id/cb_Abbreviation"
-		android:hint="在这里输入期刊缩写"
-		android:text="TOCS" />
-
-	<android.support.v7.widget.AppCompatCheckBox
-		android:id="@+id/cb_Press"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_below="@+id/cb_ISSN"
-		android:layout_marginTop="10dp" />
-
-	<EditText
 		android:id="@+id/edt_Press"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_below="@+id/edt_ISSN"
+		android:layout_below="@+id/edt_Name"
 		android:layout_toRightOf="@+id/cb_Press"
-		android:hint="在这里输入期刊出版社"
+		android:hint="在这里输入出版社"
 		android:text="ACM" />
-    <android.support.v7.widget.AppCompatCheckBox
-        android:id="@+id/cb_CCF"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/cb_Press"
-        android:text="CCF分区标准"
-        android:layout_marginTop="10dp"
-        />
-	<EditText
-		android:id="@+id/edt_CCFPartition"
+
+	<android.support.v7.widget.AppCompatCheckBox
+		android:id="@+id/cb_CiteScore"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_below="@+id/cb_CCF"
-		android:hint="在这里输入CCF分区"
-		android:text="计算机体系结构、并行与分布计算、存储系统" />
-	<EditText
-		android:id="@+id/edt_CCFCategory"
+		android:layout_below="@+id/cb_ISSN"
+		android:text="CiteScore"
+		android:layout_marginTop="10dp" />
+
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/tv_Csl"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_below="@+id/edt_CCFPartition"
-		android:hint="在这里输入CCF分类"
-		android:text="A" />
-    <android.support.v7.widget.AppCompatCheckBox
-        android:id="@+id/cb_SCI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SCI分区标准"
-        android:layout_below="@+id/edt_CCFCategory"
-        android:layout_marginTop="10dp"/>
+		android:layout_below="@+id/cb_CiteScore"
+		android:text="最小值:"/>
 	<EditText
-		android:id="@+id/edt_SCIPartition"
+		android:id="@+id/edt_Csl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/cb_CiteScore"
+		android:layout_toRightOf="@+id/tv_Csl"
+		android:layout_marginTop="-15dp"
+		android:text="3" />
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/tv_Csh"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="50dp"
+		android:layout_toRightOf="@+id/edt_Csl"
+		android:layout_below="@+id/cb_CiteScore"
+		android:text="最大值"/>
+
+	<EditText
+		android:id="@+id/edt_Csh"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/cb_CiteScore"
+		android:layout_marginTop="-15dp"
+		android:layout_toRightOf="@+id/tv_Csh"
+		android:text="4" />
+	<android.support.v7.widget.AppCompatCheckBox
+		android:id="@+id/cb_Hindex"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tv_Csl"
+		android:text="h_index"
+		 />
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/tv_Hdl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/cb_Hindex"
+		android:text="最小值:"/>
+	<EditText
+		android:id="@+id/edt_Hdl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/cb_Hindex"
+		android:layout_marginTop="-15dp"
+		android:layout_toRightOf="@+id/tv_Hdl"
+		android:text="60" />
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/tv_Hdh"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="50dp"
+		android:layout_toRightOf="@+id/edt_Hdl"
+		android:layout_below="@+id/cb_Hindex"
+		android:text="最大值"/>
+	<EditText
+		android:id="@+id/edt_Hdh"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/cb_Hindex"
+		android:layout_marginTop="-15dp"
+		android:layout_toRightOf="@+id/tv_Hdh"
+		android:text="65" />
+	<android.support.v7.widget.AppCompatCheckBox
+		android:id="@+id/cb_SCI"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tv_Hdl"
+		android:text="SCI分区标准"/>
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/tv_Fenqu"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/cb_SCI"
+		android:text="SCI分区"/>
+
+	<EditText
+		android:id="@+id/edt_Fenqu"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_below="@+id/cb_SCI"
-		android:hint="在这里输入SCI分区"
-		android:text="2" />
-	<EditText
-		android:id="@+id/edt_SCIBigSubjects"
+		android:layout_toRightOf="@+id/tv_Fenqu"
+		android:layout_marginTop="-15dp"
+		android:text="2"
+		 />
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/tv_Bsj"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_below="@+id/edt_SCIPartition"
-		android:hint="在这里输入SCI大类学科"
-		android:text="工程技术" />
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/tv_Fenqu"
+		android:text="SCI大类学科"/>
 
 	<EditText
-		android:id="@+id/edt_SCISmSubjects"
+		android:id="@+id/edt_Bsj"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_below="@+id/edt_SCIBigSubjects"
-		android:hint="在这里输入SCI小类学科"
+		android:layout_below="@+id/edt_Fenqu"
+		android:layout_marginTop="-15dp"
+		android:layout_toRightOf="@+id/tv_Bsj"
+		android:text="工程技术" />
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/tv_Ssj"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/tv_Bsj"
+		android:text="SCI小类学科"/>
+
+	<EditText
+		android:id="@+id/edt_Ssj"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/edt_Bsj"
+		android:layout_toRightOf="@+id/tv_Ssj"
+		android:layout_marginTop="-15dp"
 		android:text="计算机：理论方法" />
+	<android.support.v7.widget.AppCompatCheckBox
+		android:id="@+id/cb_Watch"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/cb_SCI"
+		android:layout_below="@+id/tv_Hdl"
+		android:layout_marginLeft="150dp"
+		android:text="查看数"/>
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/tv_Watchl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/cb_Watch"
+		android:layout_marginLeft="250dp"
+		android:text="查看数最小值"/>
+	<EditText
+		android:id="@+id/edt_Watchl"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/tv_Watchl"
+		android:layout_below="@id/cb_Watch"
+		android:layout_marginTop="-15dp"
+		android:text="13000"/>
+
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/tv_Watchh"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tv_Watchl"
+		android:layout_marginLeft="250dp"
+		android:layout_marginTop="10dp"
+		android:text="查看数最大值"/>
+	<EditText
+		android:id="@+id/edt_Watchh"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/tv_Watchh"
+		android:layout_below="@id/edt_Watchl"
+		android:layout_marginTop="-15dp"
+		android:text="14000"/>
 	<android.support.v7.widget.AppCompatCheckBox
 		android:id="@+id/cb_IF"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_below="@id/edt_SCISmSubjects"
+		android:layout_below="@id/tv_Ssj"
 		android:layout_marginTop="10dp"
-		android:text="IF指数"/>
+		android:text="2016~2018if指数"/>
 	<android.support.v7.widget.AppCompatTextView
-		android:id="@+id/tv_IFYear"
+		android:id="@+id/tv_Ifl"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_below="@id/cb_IF"
-		android:layout_marginTop="20dp"
-		android:text="年份"/>
+		android:text="if近三年平均值最小值"/>
 	<EditText
-		android:id="@+id/edt_IFYear"
+		android:id="@+id/edt_Ifl"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_below="@id/cb_IF"
-		android:layout_toRightOf="@+id/tv_IFYear"
-		android:layout_marginTop="10dp"
-		android:text="2015"/>
+		android:layout_toRightOf="@+id/tv_Ifl"
+		android:layout_marginTop="-15dp"
+		android:text="2.6"/>
 	<android.support.v7.widget.AppCompatTextView
-		android:id="@+id/tv_IFMin"
+		android:id="@+id/tv_Ifh"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_below="@id/tv_IFYear"
-		android:layout_marginTop="20dp"
-		android:layout_marginRight="10dp"
-		android:text="IF指数最小值"/>
+		android:layout_below="@id/cb_IF"
+		android:layout_toRightOf="@id/edt_Ifl"
+		android:text="if近三年平均值最大值"/>
 	<EditText
-		android:id="@+id/edt_IFMin"
+		android:id="@+id/edt_Ifh"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_below="@id/edt_IFYear"
-		android:layout_toRightOf="@+id/tv_IFMin"
-		android:layout_marginRight="10dp"
-		android:text="1.4"/>
-	<android.support.v7.widget.AppCompatTextView
-		android:id="@+id/tv_IFMax"
+		android:layout_below="@id/cb_IF"
+		android:layout_toRightOf="@+id/tv_Ifh"
+		android:layout_marginTop="-15dp"
+		android:text="2.8"/>
+	<android.support.v7.widget.AppCompatCheckBox
+		android:id="@+id/cb_CCF"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_below="@id/tv_IFYear"
-		android:layout_toRightOf="@id/edt_IFMin"
-		android:layout_marginTop="20dp"
-		android:layout_marginRight="10dp"
-		android:text="IF指数最大值"/>
+		android:layout_below="@id/tv_Ifl"
+		android:text="CCF中的分类"/>
 	<EditText
-		android:id="@+id/edt_IFMax"
+		android:id="@+id/edt_CCF"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_below="@id/edt_IFYear"
-		android:layout_toRightOf="@+id/tv_IFMax"
-		android:text="1.8"/>
+		android:layout_below="@id/tv_Ifl"
+		android:layout_toRightOf="@+id/cb_CCF"
+		android:layout_marginTop="-10dp"
+		android:layout_marginLeft="20dp"
+		android:text="A"/>
 	<Button
 		android:id="@+id/btn_select"
 		android:layout_width="wrap_content"

@@ -8,16 +8,19 @@ public class User implements Serializable {
     public static String TYPE = "Type";
     public static String NAME = "Name";
     public static String ISSN = "ISSN";
-    public static String ABBREVIATION = "Abbreviation";
     public static String PRESS = "Press";
-    public static String CCFPARTITION = "CCFPartition";
-    public static String CCFCATEGORY = "CCFCategory";
-    public static String SCIPARTITION = "SCIPartition";
-    public static String SCIBIGSUBJECTS = "SCIBigSubjects";
-    public static String SCISMSUJECTS = "SCISmSubjects";
-    public static String IFYEAR = "IFYear";
-    public static String IFMIN = "IFMin";
-    public static String IFMAX = "IFMax";
+    public static String CSL = "cs_l";
+    public static String CSH = "cs_h";
+    public static String HDL = "hd_l";
+    public static String HDH = "hd_h";
+    public static String FENQU = "fenqu";
+    public static String BSJ = "BigSubjects";
+    public static String SSJ = "SmSubjects";
+    public static String WATCHL = "watch_l";
+    public static String WATCHH = "watch_h";
+    public static String IFL = "if_l";
+    public static String IFH = "if_h";
+    public static String CCF = "CCF";
 }
 
 

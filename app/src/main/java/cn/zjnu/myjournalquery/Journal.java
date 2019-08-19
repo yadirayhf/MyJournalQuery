@@ -2,8 +2,8 @@ package cn.zjnu.myjournalquery;
 
 public class Journal {
 	private String id;
-	private String issn;
 	private String name;
+	private String issn;
 	private String press;
 	private String citescore;
 	private String hindex;

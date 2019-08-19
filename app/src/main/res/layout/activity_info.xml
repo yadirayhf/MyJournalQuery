@@ -8,64 +8,151 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="cn.zjnu.myjournalquery.InfoActivity" >
 
-	<TextView
-	    android:id="@+id/tv_number"
+	<android.support.v7.widget.AppCompatTextView
+	    android:id="@+id/itv_Number"
 	    android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_alignParentLeft="true"
+		android:text="共 条 当前第 条"
 	    />
-	<TextView
-	    android:id="@+id/tv_id"
-	    android:layout_width="wrap_content"
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_Rank"
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignParentLeft="true"
-		android:layout_below="@+id/tv_number"
-		android:text="id："
-	    />
-	<TextView
-	    android:id="@+id/tv_rank"
-	    android:layout_width="wrap_content"
+		android:layout_below="@id/itv_Number"
+		android:layout_marginTop="10dp"
+		android:text="当前期刊排名："/>
+
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_Name"
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignParentLeft="true"
-		android:layout_below="@+id/tv_id"
-		android:text="排名："
-	    />
-	<TextView
-	    android:id="@+id/tv_shortName"
-	    android:layout_width="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/itv_Rank"
+		android:text="期刊名："/>
+
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_ISSN"
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignParentLeft="true"
-		android:layout_below="@+id/tv_rank"
-		android:text="简称："
-	    />
-	<TextView
-	    android:id="@+id/tv_fullName"
-	    android:layout_width="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/itv_Rank"
+		android:layout_toRightOf="@+id/itv_Name"
+		android:layout_marginLeft="100dp"
+		android:text="ISSN:"/>
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_Press"
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignParentLeft="true"
-		android:layout_below="@+id/tv_shortName"
-		android:text="全称："
-	    />
-	<TextView
-	    android:id="@+id/tv_publishHouse"
-	    android:layout_width="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/itv_Name"
+		android:text="出版社："/>
+
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_CiteScore"
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_alignParentLeft="true"
-		android:layout_below="@+id/tv_fullName"
-		android:text="出版社："
-	    />
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/itv_ISSN"
+		android:layout_toRightOf="@+id/itv_Press"
+		android:layout_marginLeft="150dp"
+		android:text="citescore:"/>
+
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_Hindex"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/itv_Press"
+		android:text="h-index:"/>
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_Fenqu"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/itv_Hindex"
+		android:text="中科院分区号"/>
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_Bsj"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/itv_Fenqu"
+		android:text="大类学科："/>
+
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_Ssj"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/itv_Fenqu"
+		android:layout_toRightOf="@+id/itv_Bsj"
+		android:layout_marginLeft="100dp"
+		android:text="小类学科："/>
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_Watch"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/itv_Bsj"
+		android:text="查看数"/>
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_Ifavg"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/itv_Watch"
+		android:text="IF指数近三年平均值"/>
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_If2016"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/itv_Ifavg"
+		android:text="2016:"
+		/>
+
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_If2017"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/itv_Ifavg"
+		android:layout_toRightOf="@+id/itv_If2016"
+		android:layout_marginLeft="50dp"
+		android:text="2017："/>
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_If2018"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/itv_Ifavg"
+		android:layout_toRightOf="@+id/itv_If2017"
+		android:layout_marginLeft="50dp"
+		android:text="2018："/>
+	<android.support.v7.widget.AppCompatTextView
+		android:id="@+id/itv_CCF"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_below="@+id/itv_If2016"
+		android:text="CCF中的分类"
+		/>
 	<Button
-	    android:id="@+id/btn_up"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentLeft="true"
-	    android:layout_below="@+id/tv_publishHouse"
-	    android:text="上一条"/>
+		android:id="@+id/btn_up"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/itv_CCF"
+		android:layout_marginTop="50dp"
+		android:layout_marginLeft="50dp"
+		android:text="上一条"/>
 	<Button
-	    android:id="@+id/btn_down"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@+id/tv_publishHouse"
-	    android:layout_toRightOf="@+id/btn_up"
-	    android:text="下一条"/>
+		android:id="@+id/btn_down"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/btn_up"
+		android:layout_marginLeft="100dp"
+		android:layout_below="@+id/itv_CCF"
+		android:layout_marginTop="50dp"
+		android:text="下一条"/>
 </RelativeLayout>

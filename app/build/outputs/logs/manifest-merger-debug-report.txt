@@ -1,100 +1,100 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:2:1-37:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0b6c6ce3b0aac604cd0ca81cd9fd546d/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0bf92468465bd3612bb46fa0641d88da/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/299aa68ff01438b1cf91da20681a9903/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ded007b7e59368998b86003180e3b2b7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/c2d09b744f446d59f065ba43fd541bef/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/6abc40fa36284131d13fd18ddaac76e2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/bdbf1d15059727f5e6c8d835c687e5f6/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/bnc/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/1160b27b5c146ca927883560c439224c/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/bnc/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/411619fdd85b3b4d8ab78fbfb6b4d3b9/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/bnc/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f59cf4d5ee0f78db869a2751befc432d/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /home/bnc/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f43dabb7173c5d9084409ffb20e89b2b/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:2:1-37:12
+ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from G:\Journal123\app\src\main\AndroidManifest.xml:2:1-37:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\0e730daf69f33291112176dc6459c0e5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\935054618b52518e9086672ffb6d4287\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\08941035391d756de74984e96b7b830e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\64396e5be723ac1f9b76d2eea072ac2c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\69fdcf0c90b3d9f0337f8c70d8756032\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\958ab09188119ead21681c22523dacc4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8d506229b9514483bbd9d1dc69bc5bc0\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\f588c5045c25bf6664bf22e2a5559812\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\83212104ce292ae786ab783cee2b6123\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d66ad1bd4fec6fb71736edfa0e66b9ad\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0913b3bbc5f668a2c7417a7abdbf774d\AndroidManifest.xml:17:1-22:12
+INJECTED from G:\Journal123\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:4:5-37
-		INJECTED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml
-		INJECTED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:4:5-37
+		INJECTED from G:\Journal123\app\src\main\AndroidManifest.xml
+		INJECTED from G:\Journal123\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:3:5-51
 	xmlns:android
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:7:5-66
+ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:7:5-66
 	android:name
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:7:22-64
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:7:22-64
 application
-ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:9:5-35:19
+ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:9:5-35:19
 	android:label
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:12:9-41
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:12:9-41
 	tools:ignore
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:15:9-48
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:15:9-48
 	android:icon
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:11:9-45
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:11:9-45
 	android:allowBackup
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:13:9-40
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:13:9-40
 	android:networkSecurityConfig
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:14:9-69
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:14:9-69
 activity#cn.zjnu.myjournalquery.MainActivity
-ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:17:9-25:20
+ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:17:9-25:20
 	android:label
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:19:13-45
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:19:13-45
 	android:name
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:18:13-41
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:18:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:20:13-24:29
+ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:21:17-69
+ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:21:25-66
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:23:17-77
+ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:23:27-74
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:23:27-74
 activity#cn.zjnu.myjournalquery.InfoActivity
-ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:26:9-34:20
+ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:26:9-34:20
 	android:label
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:28:13-56
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:28:13-56
 	android:name
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml:27:13-41
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml:27:13-41
 uses-sdk
-INJECTED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml
-INJECTED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0b6c6ce3b0aac604cd0ca81cd9fd546d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/0b6c6ce3b0aac604cd0ca81cd9fd546d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0bf92468465bd3612bb46fa0641d88da/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0bf92468465bd3612bb46fa0641d88da/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/299aa68ff01438b1cf91da20681a9903/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/299aa68ff01438b1cf91da20681a9903/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ded007b7e59368998b86003180e3b2b7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ded007b7e59368998b86003180e3b2b7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/c2d09b744f446d59f065ba43fd541bef/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/c2d09b744f446d59f065ba43fd541bef/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/6abc40fa36284131d13fd18ddaac76e2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/6abc40fa36284131d13fd18ddaac76e2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/bdbf1d15059727f5e6c8d835c687e5f6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /home/bnc/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/bdbf1d15059727f5e6c8d835c687e5f6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/bnc/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/1160b27b5c146ca927883560c439224c/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/bnc/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/1160b27b5c146ca927883560c439224c/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/bnc/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/411619fdd85b3b4d8ab78fbfb6b4d3b9/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/bnc/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/411619fdd85b3b4d8ab78fbfb6b4d3b9/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/bnc/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f59cf4d5ee0f78db869a2751befc432d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/bnc/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f59cf4d5ee0f78db869a2751befc432d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /home/bnc/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f43dabb7173c5d9084409ffb20e89b2b/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /home/bnc/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/f43dabb7173c5d9084409ffb20e89b2b/AndroidManifest.xml:20:5-44
-INJECTED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml
-INJECTED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml
+INJECTED from G:\Journal123\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from G:\Journal123\app\src\main\AndroidManifest.xml
+INJECTED from G:\Journal123\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\0e730daf69f33291112176dc6459c0e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\0e730daf69f33291112176dc6459c0e5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\935054618b52518e9086672ffb6d4287\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\935054618b52518e9086672ffb6d4287\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\08941035391d756de74984e96b7b830e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\08941035391d756de74984e96b7b830e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\64396e5be723ac1f9b76d2eea072ac2c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\64396e5be723ac1f9b76d2eea072ac2c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\69fdcf0c90b3d9f0337f8c70d8756032\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\69fdcf0c90b3d9f0337f8c70d8756032\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\958ab09188119ead21681c22523dacc4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\958ab09188119ead21681c22523dacc4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8d506229b9514483bbd9d1dc69bc5bc0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8d506229b9514483bbd9d1dc69bc5bc0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\f588c5045c25bf6664bf22e2a5559812\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\f588c5045c25bf6664bf22e2a5559812\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\83212104ce292ae786ab783cee2b6123\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\83212104ce292ae786ab783cee2b6123\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d66ad1bd4fec6fb71736edfa0e66b9ad\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d66ad1bd4fec6fb71736edfa0e66b9ad\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0913b3bbc5f668a2c7417a7abdbf774d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Ñîº£·á\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0913b3bbc5f668a2c7417a7abdbf774d\AndroidManifest.xml:20:5-44
+INJECTED from G:\Journal123\app\src\main\AndroidManifest.xml
+INJECTED from G:\Journal123\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml
-		INJECTED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml
+		INJECTED from G:\Journal123\app\src\main\AndroidManifest.xml
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml
+		INJECTED from G:\Journal123\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml
-		ADDED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml
-		INJECTED from /home/bnc/AndroidStudioProjects/MyJournalQuery/app/src/main/AndroidManifest.xml
+		INJECTED from G:\Journal123\app\src\main\AndroidManifest.xml
+		ADDED from G:\Journal123\app\src\main\AndroidManifest.xml
+		INJECTED from G:\Journal123\app\src\main\AndroidManifest.xml
